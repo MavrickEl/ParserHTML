@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="registrations-form">
+    <form th:action="@{/parse}" method="post">
+    <h3 style="text-align:center">Can't access site :(</h3>
+    <h5 style="text-align:center">Check for typos in hostname
+    </h5>
+        <br>
+        <input th:value="${emptyLink}" type="url"  class="form-control item" pattern="http(s?)(:\/\/)((www.)?" name="link" id="floatingInput" required placeholder="link">
+        <label for="floatingInput"></label>
+    <button type="submit" class="btn btn-block create-account">Update</button>
+    </form>
+</div>
+</body>
+</html>

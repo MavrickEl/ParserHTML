@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<div th:each="result : ${words}">
+    <p th:text="${result}"/>
+</div>
+</body>
+</html>
